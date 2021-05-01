@@ -12,5 +12,8 @@ const apiClient = axios.create({
 export default {
   getTasks() {
     return apiClient.get('/tasks')
+  },
+  postTasks() {
+    return apiClient.post('/task',task)
   }
 }

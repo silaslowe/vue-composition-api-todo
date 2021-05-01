@@ -1,17 +1,19 @@
 import {reactive, readonly} from 'vue'
+import axios from 'axios'
+
 
 const state = reactive({
     tasks: []
-})
+      })
+
 
 const methods = {
-    addTask(task) {
-        state.tasks.push(task)
-        task = {
-            title: ''
-        }
-        console.log(state.tasks)
-    }
+    // postTasks(task) {
+    //     return apiClient.post('/task',task)
+    //   },
+    //   getTasks() {
+    //     return apiClient.get('/tasks')
+    //   }
 }
 
 export default {

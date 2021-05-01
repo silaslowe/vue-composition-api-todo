@@ -19,7 +19,8 @@
 
 <script>
 import { inject } from 'vue'
-import { BaseInput } from './BaseInput.vue' 
+import { BaseInput } from './BaseInput.vue'
+import TaskServices from '../services/TaskServices' 
 
 export default {
     name: 'TaskForm',
@@ -33,7 +34,8 @@ export default {
     data() {
         return {
         task: {
-            title: ''
+            title: '',
+            details: ''
         }
       }
     },

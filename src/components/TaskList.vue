@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import { inject } from 'vue'
 import TaskServices from '../services/TaskServices'
 import TaskCard from '../components/TaskCard'
 
@@ -14,8 +15,11 @@ export default {
     components: {
         TaskCard
     },
-    setup () {
-        return {}
+    setup() {
+        const store = inject('store')
+        return {
+            store
+        }
     },
     data() {
         return {
