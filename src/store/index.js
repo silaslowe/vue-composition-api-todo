@@ -7,6 +7,10 @@ const state = reactive({
 const methods = {
     addTask(task) {
         state.tasks.push(task)
+        task = {
+            title: ''
+        }
+        console.log(state.tasks)
     }
 }
 
